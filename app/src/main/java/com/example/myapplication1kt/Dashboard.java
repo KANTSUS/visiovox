@@ -56,8 +56,8 @@ public class Dashboard extends AppCompatActivity {
                     realtime();
                 } if (command.contains("ocr")) {
                     OCR();
-                }  if (command.contains("asv")) {
-                    ASV();
+                }  if (command.contains("assistant")) {
+                    assistant();
 
                 }
                 else {
@@ -94,7 +94,7 @@ public class Dashboard extends AppCompatActivity {
         Intent intent = new Intent(this, OCR.class); // Assuming you have a SettingsActivity
         startActivity(intent);
     }
-    private void ASV() {
+    private void assistant() {
         Toast.makeText(this, "Navigating to ASV...", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, ASV.class); // Assuming you have a SettingsActivity
         startActivity(intent);
